@@ -6,14 +6,42 @@ body {
   padding: 0;
 }
 
-h1 {
+/*
+*******************************
+* =header
+*******************************
+*/
+
+header {
   background: #332E2E;
+}
+
+h1, h2 {
   color: #DAF6F6;
   font-family: Arial;
   font-weight: normal;
   margin: 0;
   padding: 35px 35px;
 }
+
+h2 {
+  padding: 0px 35px 35px;
+  color: grey;
+  font-size: 1.5em;
+  font-family: Helvetica;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #DAF6F6;
+}
+
+/*
+*******************************
+* =nav
+*******************************
+*/
+
 
 nav {
   width: 30%;
@@ -30,7 +58,7 @@ nav a {
   color: #DAF6F6;
 }
 
-nav a:hover {
+nav a:hover, .active {
   color: #D319BD;
 }
 
@@ -41,6 +69,6 @@ nav ul li {
   background: #332E2E;
 }
 
-nav ul li:hover {
+nav ul li:hover, .active {
   background: #776969;
 }
