@@ -313,6 +313,17 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        // Deploy to github
+        'gh-pages': {
+          dist: {
+            options: {
+              base: 'dist',
+              message: 'Deployed by grunt gh-pages'
+            },
+            src: '**/*'
+          }
         }
     });
 
@@ -372,4 +383,5 @@ module.exports = function (grunt) {
     ]);
 
     grunt.registerTask('preview', ['connect:dist:keepalive']);
+    grunt.registerTask('deploy', ['build', 'gh-pages:dist']);
 };

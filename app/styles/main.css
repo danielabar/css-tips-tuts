@@ -44,6 +44,7 @@ h1 a {
 
 
 nav {
+  float: left;
   width: 30%;
   margin-left: -41px;
   margin-top: -16px;
@@ -71,4 +72,35 @@ nav ul li {
 
 nav ul li:hover, .active {
   background: #776969;
+}
+
+/*
+*******************************
+* =container
+*******************************
+*/
+
+.container {
+  width: 40%;
+  margin: auto;
+}
+
+
+/*
+*******************************
+* =Use CSS Shorthand
+*******************************
+*/
+
+#font-long {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 1.5em;
+  font-family: Arial, sans-serif;
+  background-color: #ccc;
+}
+
+#font-short {
+
 }
