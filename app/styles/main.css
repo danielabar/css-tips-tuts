@@ -127,3 +127,14 @@ nav ul li:hover, .active {
 #pad-short-2 {
   padding: 1em 2em;
 }
+
+/*
+*******************************
+* =Change Text Selection
+*******************************
+*/
+
+#custom-select::selection {
+  background-color: red;
+  color: white;
+}

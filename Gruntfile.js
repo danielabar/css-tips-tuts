@@ -100,7 +100,8 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     base: '<%= config.dist %>',
-                    livereload: false
+                    livereload: false,
+                    port: 9002
                 }
             }
         },
@@ -191,7 +192,8 @@ module.exports = function (grunt) {
             },
             html: [
               '<%= config.app %>/index.html',
-              '<%= config.app %>/css-shorthand.html'
+              '<%= config.app %>/css-shorthand.html',
+              '<%= config.app %>/text-selection.html'
             ]
         },
 
