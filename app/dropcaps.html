@@ -47,13 +47,37 @@
     </ul>
   </nav>
 
-  <div class="container font-stacks">
+  <div class="container drop-caps">
 
-    <h3>This paragraph is targetted with a typical font stack</h3>
-    <p id="font-typical">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eveniet, aut iure sint accusantium quidem itaque? Quasi exercitationem laudantium tempore aperiam, inventore ducimus? Dolore magnam voluptate reiciendis accusamus vitae architecto, vero rem. Quod, aliquam, laboriosam. Fugit totam tempora atque autem.</p>
+    <h3>Method 1: Wrap first letter in span</h3>
+    <p class="dropcaps-1">
+      <span class="first-letter">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit. Cum eveniet, aut iure sint accusantium quidem itaque? Quasi exercitationem laudantium tempore aperiam, inventore ducimus? Dolore magnam voluptate reiciendis accusamus vitae architecto, vero rem. Quod, aliquam, laboriosam. Fugit totam tempora atque autem.
+    </p>
+    <p class="dropcaps-1">
+      <span class="first-letter">U</span>t tempore earum mollitia cupiditate in esse eligendi magnam ex sequi numquam, laudantium nisi, vero nobis eos. Tempora fugiat molestiae possimus eveniet quo quidem molestias consequuntur, nisi dolores tenetur ut, vitae eaque expedita consectetur unde aspernatur odit repellendus. Fuga necessitatibus, quis voluptatibus.
+    </p>
     <pre><code class="language-css">
-    p {
-      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    span .first-letter {
+      float: left;
+      margin: 0 14px 0 0;
+      color: green;
+      font: 72px/100% Georgia, serif;
+    }
+    </code></pre>
+
+    <h3>Method 2: Pure CSS3 solution</h3>
+    <p class="dropcaps-2">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eveniet, aut iure sint accusantium quidem itaque? Quasi exercitationem laudantium tempore aperiam, inventore ducimus? Dolore magnam voluptate reiciendis accusamus vitae architecto, vero rem. Quod, aliquam, laboriosam. Fugit totam tempora atque autem.
+    </p>
+    <p class="dropcaps-2">
+      Ut tempore earum mollitia cupiditate in esse eligendi magnam ex sequi numquam, laudantium nisi, vero nobis eos. Tempora fugiat molestiae possimus eveniet quo quidem molestias consequuntur, nisi dolores tenetur ut, vitae eaque expedita consectetur unde aspernatur odit repellendus. Fuga necessitatibus, quis voluptatibus.
+    </p>
+    <pre><code class="language-css">
+    p:first-letter {
+      float: left;
+      margin: 0 14px 0 0;
+      color: green;
+      font: 72px/100% Georgia, serif;
     }
     </code></pre>
 

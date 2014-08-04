@@ -153,3 +153,23 @@ nav ul li:hover, .active {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
 }
+
+/*
+*******************************
+* Drop Caps
+*******************************
+*/
+
+.dropcaps-1 .first-letter {
+  float: left;
+  margin: 0 14px 0 0;
+  color: green;
+  font: 72px/100% Georgia, serif;
+}
+
+.dropcaps-2:first-letter {
+  float: left;
+  margin: 0 14px 0 0;
+  color: green;
+  font: 72px/100% Georgia, serif;
+}
