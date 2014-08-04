@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>css tips tuts</title>
+  <title>Drop Caps</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -10,6 +10,7 @@
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+  <link rel="stylesheet" href="../bower_components/prism/themes/prism-twilight.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -19,8 +20,8 @@
 <body>
 
   <header>
-    <h1>CSS Tips &amp; Tricks</h1>
-    <h2>Learning CSS with TutsPlus</h2>
+    <h1><a href="index.html">CSS Tips &amp; Tricks</a></h1>
+    <h2>Drop Caps</h2>
   </header>
 
   <nav>
@@ -28,7 +29,7 @@
       <a href="css-shorthand.html"><li>CSS Shorthand</li></a>
       <a href="text-selection.html"><li>Text Selection Color</li></a>
       <a href="font-stacks.html"><li>Font Stacks</li></a>
-      <a href="dropcaps.html"><li>Drop Caps</li></a>
+      <li class="active">Drop Caps</li>
       <a href="placeholder.html"><li>Placeholder Text</li></a>
       <a href="dottedoutline.html"><li>Link Outlines</li></a>
       <a href="customradio.html"><li>Radio Buttons and Checkboxes</li></a>
@@ -46,14 +47,23 @@
     </ul>
   </nav>
 
-  <!-- build:js scripts/vendor.js -->
+  <div class="container font-stacks">
+
+    <h3>This paragraph is targetted with a typical font stack</h3>
+    <p id="font-typical">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eveniet, aut iure sint accusantium quidem itaque? Quasi exercitationem laudantium tempore aperiam, inventore ducimus? Dolore magnam voluptate reiciendis accusamus vitae architecto, vero rem. Quod, aliquam, laboriosam. Fugit totam tempora atque autem.</p>
+    <pre><code class="language-css">
+    p {
+      font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+    </code></pre>
+
+  </div><!--//container-->
+
+  <!-- build:js scripts/vendor-prism.js -->
   <!-- bower:js -->
-  <script src="../bower_components/jquery/dist/jquery.js"></script>
+  <script src="../bower_components/prism/prism.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
-  <!-- build:js({app,.tmp}) scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
 </body>
 </html>

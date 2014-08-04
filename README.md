@@ -24,3 +24,7 @@ Up until CSS3, this was not possible to style.
 Specify a list of fonts. Then browser will pick first one that user has installed on their machine, reading from left to right.
 
 [Demo](http://danielabar.github.io/css-tips-tuts/font-stacks.html)
+
+## Drop Caps
+
+[Demo](http://danielabar.github.io/css-tips-tuts/dropcaps.html)
