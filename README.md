@@ -35,3 +35,21 @@ First way to achieve this requires modifying markup with `<span>` tag, but is co
 
 Second way to achieve this is using CSS3 pseudo selector `:first-letter` which is much cleaner because it doesn't clutter up the markup.
 However it's not [supported](https://developer.mozilla.org/en-US/docs/Web/CSS/::first-letter#Browser_compatibility) in older browsers.
+
+## Style Placeholder Text
+
+[Demo](http://danielabar.github.io/css-tips-tuts/placeholder.html)
+
+New attribute introduced with HTML5. Used to specify a temporary text value inside an input field.
+
+Requires vendor prefixes to style it.
+
+## Remove Dotted Outline on Links
+
+[Demo](http://danielabar.github.io/css-tips-tuts/dottedoutline.html)
+
+When user tabs through links, a faint dotted border appears around them. This can be removed with styling.
+
+BUT outline is important for accessibility, so think twice before removing it.
+
+Outline also applies to text inputs having focus. This can also be removed.

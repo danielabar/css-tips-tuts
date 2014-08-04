@@ -173,3 +173,38 @@ nav ul li:hover, .active {
   color: green;
   font: 72px/100% Georgia, serif;
 }
+
+/*
+*******************************
+* Style Placeholder Text
+*******************************
+*/
+
+input.style-placeholder::-webkit-input-placeholder {
+  color: blue;
+  background-color: #FFE685;
+}
+
+input.style-placeholder::-moz-placeholder {
+  color: blue;
+  background-color: #FFE685;
+}
+
+input.style-placeholder::-ms-input-placeholder {
+  color: blue;
+  background-color: #FFE685;
+}
+
+/*
+*******************************
+* Remove Dotted Outline Links
+*******************************
+*/
+
+.no-outline a:focus {
+  outline: none;
+}
+
+.no-outline input[type="text"] {
+  outline: none;
+}

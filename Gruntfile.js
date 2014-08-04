@@ -238,7 +238,7 @@ module.exports = function (grunt) {
                     removeCommentsFromCDATA: true,
                     removeEmptyAttributes: true,
                     removeOptionalTags: true,
-                    removeRedundantAttributes: true,
+                    removeRedundantAttributes: false,
                     useShortDoctype: true
                 },
                 files: [{
@@ -384,6 +384,6 @@ module.exports = function (grunt) {
         'build'
     ]);
 
-    grunt.registerTask('preview', ['connect:dist:keepalive']);
+    grunt.registerTask('preview', ['build', 'connect:dist:keepalive']);
     grunt.registerTask('deploy', ['build', 'gh-pages:dist']);
 };
