@@ -42,7 +42,6 @@ h1 a {
 *******************************
 */
 
-
 nav {
   float: left;
   width: 30%;
@@ -85,6 +84,12 @@ nav ul li:hover, .active {
   margin: auto;
 }
 
+.container pre {
+  border-radius: 0;
+  border: 0.1em solid black;
+  box-shadow: none;
+  padding: 0;
+}
 
 /*
 *******************************
@@ -92,15 +97,33 @@ nav ul li:hover, .active {
 *******************************
 */
 
+.css-short p {
+  background-color: #D3ACDD;
+}
+
 #font-long {
   font-style: italic;
   font-weight: bold;
   font-size: 13px;
   line-height: 1.5em;
   font-family: Arial, sans-serif;
-  background-color: #ccc;
 }
 
 #font-short {
+  font: italic bold 13px/1.5em Arial, sans-serif;
+}
 
+#pad-long {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#pad-short {
+  padding: 1em;
+}
+
+#pad-short-2 {
+  padding: 1em 2em;
 }
