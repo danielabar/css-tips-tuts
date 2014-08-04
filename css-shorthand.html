@@ -1,12 +1,28 @@
-<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><title>Use CSS Shorthand</title><meta name=description content=""><meta name=viewport content="width=device-width"><link rel="shortcut icon" href=/6df2b309.favicon.ico><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/6a9515dd.vendor.css><link rel=stylesheet href=styles/f911550a.main.css><body><header><h1><a href=index.html>CSS Tips &amp; Tricks</a></h1><h2>Use CSS Shorthand</h2></header><nav><ul><li class=active>Use CSS Shorthand</li><a href=#><li>Change Text Selection Color</li></a> <a href=#><li>Awesome Font Stacks</li></a></ul></nav><div class=container><p id=font-long>This paragraph is styled with the long form of font styling</p><pre>
-      <code class=language-css>
-        p {
-          font-style: italic;
-          font-weight: bold;
-          font-size: 13px;
-          line-height: 1.5em;
-          font-family: Arial, sans-serif;
-          background-color: #ccc;
-        }
-      </code>
-    </pre><p id=font-short>This paragraph is styled with the shorthand font styling/p></p></div><script src=scripts/724f6be5.vendor-prism.js></script>
+<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><title>Use CSS Shorthand</title><meta name=description content=""><meta name=viewport content="width=device-width"><link rel="shortcut icon" href=/6df2b309.favicon.ico><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/6a9515dd.vendor.css><link rel=stylesheet href=styles/3d761ac1.main.css><body><header><h1><a href=index.html>CSS Tips &amp; Tricks</a></h1><h2>Use CSS Shorthand</h2></header><nav><ul><li class=active>Use CSS Shorthand</li><a href=#><li>Change Text Selection Color</li></a> <a href=#><li>Awesome Font Stacks</li></a></ul></nav><div class="container css-short"><p id=font-long>This paragraph is styled with the long form of font styling</p><pre><code class=language-css>
+    p {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 1.5em;
+      font-family: Arial, sans-serif;
+    }
+    </code></pre><p id=font-short>This paragraph is styled with the shorthand font styling</p><pre><code class=language-css>
+    p {
+      font: italic bold 13px/1.5em Arial, sans-serif;
+    }
+    </code></pre><p id=pad-long>This paragraph is styled with the long form of padding</p><pre><code class=language-css>
+    p {
+      padding-top: 1em;
+      padding-bottom: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+    </code></pre><p id=pad-short>This paragraph has 1em of padding all around</p><pre><code class=language-css>
+    p {
+      padding: 1em;
+    }
+    </code></pre><p id=pad-short-2>This paragraph has 1em padding top and bottom, 2em padding left and right</p><pre><code class=language-css>
+    p {
+      padding: 1em 2em;
+    }
+    </code></pre></div><script src=scripts/724f6be5.vendor-prism.js></script>
