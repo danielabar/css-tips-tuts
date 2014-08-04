@@ -18,3 +18,9 @@ Up until CSS3, this was not possible to style.
 [Demo](http://danielabar.github.io/css-tips-tuts/text-selection.html)
 
 [Browser Support](http://caniuse.com/css-selection)
+
+## Awesome Font Stacks
+
+Specify a list of fonts. Then browser will pick first one that user has installed on their machine, reading from left to right.
+
+[Demo](http://danielabar.github.io/css-tips-tuts/font-stacks.html)

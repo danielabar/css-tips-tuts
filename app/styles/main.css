@@ -93,7 +93,7 @@ nav ul li:hover, .active {
 
 /*
 *******************************
-* =Use CSS Shorthand
+* Use CSS Shorthand
 *******************************
 */
 
@@ -130,11 +130,26 @@ nav ul li:hover, .active {
 
 /*
 *******************************
-* =Change Text Selection
+* Change Text Selection
 *******************************
 */
 
 #custom-select::selection {
   background-color: red;
   color: white;
+}
+
+/*
+*******************************
+* Awesome Font Stacks
+*******************************
+*/
+
+#font-typical {
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#font-alternate {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
 }
