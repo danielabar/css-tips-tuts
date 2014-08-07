@@ -53,3 +53,13 @@ When user tabs through links, a faint dotted border appears around them. This ca
 BUT outline is important for accessibility, so think twice before removing it.
 
 Outline also applies to text inputs having focus. This can also be removed.
+
+## Create custom radio buttons and checkboxes
+
+[Demo](http://danielabar.github.io/css-tips-tuts/customradio.html)
+
+First hide the element so that a custom one can be created.
+
+Then use `:before` pseudo element of the label to create a styled checkbox.
+
+To make the styled element have a checkbox when user clicks, use the `:checked` pseudo class.
