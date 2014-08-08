@@ -82,4 +82,19 @@ There are three kinds of centering
 
 Note that images display `inline` by default. To do centering, must set `display: block`.
 
-For vertical align, must set a height.2
+For vertical align, must set a height.
+
+## Absolutely Center an Image
+
+[Demo](http://danielabar.github.io/css-tips-tuts/imgcentering.html)
+
+Placing an image in the middle of its parent element.
+
+There are two techniques to achieve this.
+
+First method uses `background` css property with url reference to image.
+
+Second method uses absolute positioning. Any element can be positioned this way, not just images.
+As long as the element has a width, height and is capable of receiving margins.
+
+## Absolutely Center an Image
