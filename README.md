@@ -136,3 +136,15 @@ Newest solution is "clearfix hack". This uses `:before` and `:after` pseudo-elem
 To make triangles same size, the opqaue border width should be equal to:
 
   (border-left-width + border-right-width)* 0.866
+
+## CSS Circles
+
+[Demo](http://danielabar.github.io/css-tips-tuts/circles.html)
+
+To make a circle, use a `<div>` with equal `width` and `height`.
+
+Then set `border-radius` to half the width and heightl.
+
+Can also create circles from images.
+
+Browser support is pretty good, will work in all major browsers except IE8.

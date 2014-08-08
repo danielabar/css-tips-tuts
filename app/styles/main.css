@@ -474,3 +474,22 @@ input[type="radio"]:checked + label:before {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+
+/*
+*******************************
+* CSS  Circles
+*******************************
+*/
+
+.circle {
+  background-color: green;
+  width: 10em;
+  height: 10em;
+  border-radius: 5em;
+}
+
+.round-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
