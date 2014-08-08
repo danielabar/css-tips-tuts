@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>CSS Circles</title>
+  <title>Create a layered paper effect</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -21,7 +21,7 @@
 
   <header>
     <h1><a href="index.html">CSS Tips &amp; Tricks</a></h1>
-    <h2>CSS Circles</h2>
+    <h2>Create a layered paper effect</h2>
   </header>
 
   <nav>
@@ -38,8 +38,8 @@
       <a href="imgcentering.html"><li>Image Centering</li>
       <a href="floats.html"><li>Floats</li></a>
       <a href="triangles.html"><li>Triangles</li></a>
-      <li class="active">Circles</li>
-      <a href="layeredpaper.html"><li>Layered Paper</li></a>
+      <a href="circles.html"><li>Circles</li></a>
+      <li class="active">Layered Paper</li>
       <a href="creativebullets.html"><li>List Bullets</li></a>
       <a href="backtotop.html"><li>Back to Top</li></a>
       <a href="evenodd.html"><li>Even Odd Rows</li></a>
@@ -49,22 +49,23 @@
 
   <div class="container">
 
-    <div class="circle circle-outer"></div>
+    <div class="paper">
+      Hi, this is a layered paper effect.
+    </div>
     <pre><code class="language-css">
-    .circle {
-      background-color: green;
-      width: 10em;
-      height: 10em;
-      border-radius: 5em;
-    }
-    </code></pre>
+    .paper {
+      background-color: #fafafa;
+      border: 1px solid #f2f2f3;
+      border-bottom: none;
+      padding: 1em;
+      text-align: center;
 
-    <img class="round-img" src="http://lorempixel.com/200/200" alt="Lorem Pixel Random Image" title="Lorem Pixel Random Image">
-    <pre><code class="language-css">
-    .round-img {
-      width: 200px;
-      height: 200px;
-      border-radius: 100px;
+      box-shadow:
+        0 1px 1px rgba(0, 0, 0, .15),
+        0 10px 0 -5px #eee,
+        0 10px 1px -4px rgba(0, 0, 0, .15),
+        0 20px 0 -10px #eee,
+        0 20px 1px -9px rgba(0, 0, 0, .15);
     }
     </code></pre>
 
