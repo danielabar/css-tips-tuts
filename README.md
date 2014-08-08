@@ -63,3 +63,9 @@ First hide the element so that a custom one can be created.
 Then use `:before` pseudo element of the label to create a styled checkbox.
 
 To make the styled element have a checkbox when user clicks, use the `:checked` pseudo class.
+
+## Create Awesome States on Form Elements
+
+[Demo](http://danielabar.github.io/css-tips-tuts/formstates.html)
+
+Start by creating a reset for the form.
