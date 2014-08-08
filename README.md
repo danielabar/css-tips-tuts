@@ -128,3 +128,11 @@ Another approach is to set overflow hidden on the parent element.
 But this is not recomended. For example, if parent element contains a dropdown, it will be cutoff.
 
 Newest solution is "clearfix hack". This uses `:before` and `:after` pseudo-elements.
+
+## CSS Triangles
+
+[Demo](http://danielabar.github.io/css-tips-tuts/triangles.html)
+
+To make triangles same size, the opqaue border width should be equal to:
+
+  (border-left-width + border-right-width)* 0.866

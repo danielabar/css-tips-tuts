@@ -1,0 +1,126 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>CSS Triangles</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
+  <link rel="stylesheet" href="../bower_components/prism/themes/prism-twilight.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+<body>
+
+  <header>
+    <h1><a href="index.html">CSS Tips &amp; Tricks</a></h1>
+    <h2>CSS Triangles</h2>
+  </header>
+
+  <nav>
+    <ul>
+      <a href="css-shorthand.html"><li>CSS Shorthand</li></a>
+      <a href="text-selection.html"><li>Text Selection Color</li></a>
+      <a href="font-stacks.html"><li>Font Stacks</li></a>
+      <a href="dropcaps.html"><li>Drop Caps</li></a>
+      <a href="placeholder.html"><li>Placeholder Text</li></a>
+      <a href="dottedoutline.html"><li>Link Outlines</li>
+      <a href="customradio.html"><li>Radio Buttons and Checkboxes</li></a>
+      <a href="formstates.html"><li>Form Element States</li></a>
+      <a href="centering.html"><li>Centering</li>
+      <a href="imgcentering.html"><li>Image Centering</li>
+      <a href="floats.html"><li>Floats</li></a>
+      <li class="active">Triangles</li>
+      <a href="circles.html"><li>Circless</li></a>
+      <a href="layeredpaper.html"><li>Layered Paper</li></a>
+      <a href="creativebullets.html"><li>List Bullets</li></a>
+      <a href="backtotop.html"><li>Back to Top</li></a>
+      <a href="evenodd.html"><li>Even Odd Rows</li></a>
+      <a href="fluidimages.html"><li>Fluid Images</li></a>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <h3>Start with width and height of 0</h3>
+    <pre><code class="language-css">
+    .arrow {
+      height: 0;
+      width: 0;
+      margin-bottom: 1em;
+    }
+    </code></pre>
+
+    <h3>Up arrow is made with opaque bottom border, and transparent left and right borders</h3>
+    <div class="arrow up"></div>
+    <pre><code class="language-css">
+    .up {
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 52px solid red;
+    }
+    </code></pre>
+
+    <h3>Down arrow is made with opaque top border, and transparent left and right borders</h3>
+    <div class="arrow down"></div>
+    <pre><code class="language-css">
+    .down {
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-top: 52px solid blue;
+    }
+    </code></pre>
+
+    <h3>Left arrow is made with opaque right border, and transparent top and bottom borders</h3>
+    <div class="arrow left"></div>
+    <pre><code class="language-css">
+    .left {
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-right: 52px solid green;
+    }
+    </code></pre>
+
+    <h3>Right arrow is made with opaque left border, and transparent top and bottom borders</h3>
+    <div class="arrow right"></div>
+    <pre><code class="language-css">
+    .right {
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 52px solid yellow;
+    }
+    </code></pre>
+
+    <h3>Start with right arrow and rotate 90 &deg;</h3>
+    <div class="arrow right-rotated"></div>
+    <pre><code class="language-css">
+    .right-rotated {
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      border-left: 53px solid purple;
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+    </code></pre>
+
+  </div><!--//container-->
+
+  <footer>
+    <small>&copy; Copyright 2014, <a href="https://github.com/danielabar">Daniela Baron</a></small>
+  </footer>
+
+  <!-- build:js scripts/vendor-prism.js -->
+  <!-- bower:js -->
+  <script src="../bower_components/prism/prism.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+</body>
+</html>

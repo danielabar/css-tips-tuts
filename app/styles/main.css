@@ -430,3 +430,47 @@ input[type="radio"]:checked + label:before {
 .learning-floats:after {
   clear: both;
 }
+
+/*
+*******************************
+* CSS Triangles
+*******************************
+*/
+
+.arrow {
+  height: 0;
+  width: 0;
+  margin-bottom: 1em;
+}
+
+.up {
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 52px solid red;
+}
+
+.down {
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 52px solid blue;
+}
+
+.left {
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 52px solid green;
+}
+
+.right {
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 53px solid yellow;
+}
+
+.right-rotated {
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-left: 53px solid purple;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
