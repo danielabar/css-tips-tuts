@@ -97,4 +97,34 @@ First method uses `background` css property with url reference to image.
 Second method uses absolute positioning. Any element can be positioned this way, not just images.
 As long as the element has a width, height and is capable of receiving margins.
 
-## Absolutely Center an Image
+## Properly Clear and Contain Floats
+
+[Demo](http://danielabar.github.io/css-tips-tuts/floats.html)
+
+Floats are necessary for creating column layouts or simply to position elements on the same line.
+
+_However_, setting a float on an element will always create problems for its parent element.
+The parent will collapse because it can no longer calculate its height.
+
+Problem appears because once an element is floated, its taken out of the normal document flow.
+So the parent cannot determine its height because it doesn't have any content.
+Therefore all the other elements that should be laid out below, get pulled up to the top and the page looks like a mess.
+
+Oldest way to fix is to add some markup, for example, after the floated elements
+
+  ```html
+  <div class="clear"></div>
+  ```
+
+Then in css
+
+  ```css
+  .clear {
+    clear: both;
+  }
+  ```
+
+Another approach is to set overflow hidden on the parent element.
+But this is not recomended. For example, if parent element contains a dropdown, it will be cutoff.
+
+Newest solution is "clearfix hack". This uses `:before` and `:after` pseudo-elements.

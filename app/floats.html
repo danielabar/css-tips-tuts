@@ -2,7 +2,7 @@
 <html class="no-js">
 <head>
   <meta charset="utf-8">
-  <title>Horizontal and Vertical Centering</title>
+  <title>Properly Clear and Contain Floats</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" href="/favicon.ico">
@@ -21,7 +21,7 @@
 
   <header>
     <h1><a href="index.html">CSS Tips &amp; Tricks</a></h1>
-    <h2>Horizontal and Vertical Centering</h2>
+    <h2>Properly Clear and Contain Floats</h2>
   </header>
 
   <nav>
@@ -34,9 +34,9 @@
       <a href="dottedoutline.html"><li>Link Outlines</li>
       <a href="customradio.html"><li>Radio Buttons and Checkboxes</li></a>
       <a href="formstates.html"><li>Form Element States</li></a>
-      <li class="active">Centering</li>
-      <a href="imgcentering.html"><li>Image Centering</li></a>
-      <a href="floats.html"><li>Floats</li></a>
+      <a href="centering.html"><li>Centering</li>
+      <a href="imgcentering"><li>Image Centering</li></a>
+      <li class="active">Floats</li>
       <a href="triangles.html"><li>Triangles</li></a>
       <a href="circles.html"><li>Circless</li></a>
       <a href="layeredpaper.html"><li>Layered Paper</li></a>
@@ -47,52 +47,17 @@
     </ul>
   </nav>
 
-  <div class="container center-examples">
+  <div class="container learning-floats">
 
-    <h3>Center lines of text horizontally</h3>
-    <div class="centering-1">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ad architecto deleniti, quis obcaecati at necessitatibus quidem alias. Nobis at alias cumque autem voluptatem a assumenda voluptate, atque. At similique numquam unde modi, quia dicta dolorem suscipit, voluptates quibusdam ea.</p>
-    </div>
-    <pre><code class="language-css">
-    .centering-1 p {
-      text-align: center;
-    }
-    </code></pre>
+    <img src="http://lorempixel.com/200/200" alt="Image" class="floated-image" title="Lorem Pixel Random Image">
+    <p class="floated-p">This is a paragraph floated to the left</p>
 
-    <h3>Center a block of text horizontally</h3>
-    <div class="centering-2">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ad architecto deleniti, quis obcaecati at necessitatibus quidem alias. Nobis at alias cumque autem voluptatem a assumenda voluptate, atque. At similique numquam unde modi, quia dicta dolorem suscipit, voluptates quibusdam ea.</p>
-    </div>
     <pre><code class="language-css">
-    .centering-2 p {
-      width: 50%;
-      margin: 0 auto;
-    }
-    </code></pre>
-
-    <h3>Center an image horizontally</h3>
-    <div class="centering-3">
-      <img src="http://lorempixel.com/200/200/cats" alt="Lorem Pixel Random Cat" title="Lorem Pixel Random Cat">
-    </div>
-    <pre><code class="language-css">
-    .centering-3 img {
-      margin: 0 auto;
-      display: block;
-    }
-    </code></pre>
-
-    <div class="centering-4">
-      <p>This paragraph will be centered vertically.</p>
-    </div>
-    <pre><code class="language-css">
-    .centering-4 {
-      height: 15em;
-      display: table-cell;
-      vertical-align: middle;
-    }
     </code></pre>
 
   </div><!--//container-->
+
+  <!-- <div class="clear"></div> -->
 
   <footer>
     <small>&copy; Copyright 2014, <a href="https://github.com/danielabar">Daniela Baron</a></small>

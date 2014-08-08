@@ -104,6 +104,16 @@ nav ul li:hover, .active {
 
 /*
 *******************************
+* Footer
+*******************************
+*/
+
+footer {
+  margin: 10px;
+}
+
+/*
+*******************************
 * Use CSS Shorthand
 *******************************
 */
@@ -389,4 +399,34 @@ input[type="radio"]:checked + label:before {
   left: 50%;
   margin-top: -100px;
   margin-left: -100px;
+}
+
+/*
+*******************************
+* Clear & Contain Floats
+*******************************
+*/
+
+.learning-floats {
+  background-color: #ccc;
+  /*overflow: hidden;*/
+}
+
+.floated-image,
+.floated-p {
+  float: left;
+}
+
+.clear {
+  /*clear: both;*/
+}
+
+.learning-floats:before,
+.learning-floats:after {
+  content: "";
+  display: table;
+}
+
+.learning-floats:after {
+  clear: both;
 }
