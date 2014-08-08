@@ -92,6 +92,7 @@ nav ul li:hover, .active {
 .container {
   width: 40%;
   margin: auto;
+  margin-top: 20px;
 }
 
 .container pre {
@@ -317,4 +318,40 @@ input[type="radio"]:checked + label:before {
 .formstates .custom-hover textarea:focus {
   box-shadow: 2px 2px 5px #6650DA;
   border-color: #74b9ef;
+}
+
+/*
+*******************************
+* Horizontal & Vertical Centering
+*******************************
+*/
+
+[class|="centering"] {
+  background-color: #ccc;
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+.center-examples pre {
+  margin-bottom: 2em;
+}
+
+.centering-1 p {
+  text-align: center;
+}
+
+.centering-2 p {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.centering-3 img {
+  margin: 0 auto;
+  display: block;
+}
+
+.centering-4 {
+  height: 15em;
+  display: table-cell;
+  vertical-align: middle;
 }

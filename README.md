@@ -68,4 +68,18 @@ To make the styled element have a checkbox when user clicks, use the `:checked` 
 
 [Demo](http://danielabar.github.io/css-tips-tuts/formstates.html)
 
-Start by creating a reset for the form.
+Start by creating a reset for the form, then style the `:hover` and `:focus` states.
+
+## Horizontal and Vertical Centering
+
+[Demo](http://danielabar.github.io/css-tips-tuts/centering.html)
+
+There are three kinds of centering
+
+1. Centering lines of text
+2. Centering a block of text or an image
+3. Centering a block of text or an image vertically
+
+Note that images display `inline` by default. To do centering, must set `display: block`.
+
+For vertical align, must set a height.2
