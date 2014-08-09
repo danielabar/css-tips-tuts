@@ -148,3 +148,11 @@ Then set `border-radius` to half the width and heightl.
 Can also create circles from images.
 
 Browser support is pretty good, will work in all major browsers except IE8.
+
+## Layered Paper Effect
+
+[Demo](http://danielabar.github.io/css-tips-tuts/layeredpaper.html)
+
+Apply multiple `box-shadow` to same element with varying blurs and offsets with comma separated list of properties.
+
+## Get Creative with List Bullets

@@ -515,3 +515,18 @@ input[type="radio"]:checked + label:before {
     0 20px 0 -10px #eee,
     0 20px 1px -9px rgba(0, 0, 0, .15);
 }
+
+/*
+*******************************
+* Creative List Bullets
+*******************************
+*/
+
+.creative-list ul {
+  list-style-type: none;
+}
+
+.creative-list .list-1 li {
+  background: url(../images/bullet.png) left center no-repeat;
+  padding-left: 1em;
+}
