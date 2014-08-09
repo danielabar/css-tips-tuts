@@ -159,6 +159,9 @@ Apply multiple `box-shadow` to same element with varying blurs and offsets with 
 
 [Demo](http://danielabar.github.io/css-tips-tuts/creativebullets.html)
 
+Can use an image instead of bullets.
+Can also use CSS shapes like triangles or circles instead of default browser bullets.
+
 Note 2-arg version of border-color
 
   ```css
@@ -166,3 +169,13 @@ Note 2-arg version of border-color
   ```
 
 Vertical border will be transparent, horizontal border will be #111.
+
+## Create a fixed back to top button
+
+[Demo](http://danielabar.github.io/css-tips-tuts/backtotop.html)
+
+Back to top button is usually positioned in lower part of the page.
+It doesn't scroll along with the page, it stays in the same spot.
+
+For a full solution, should also have some JavaScript that shows or hides the 'Back to Top' button depending on the scrollbar position,
+but that is outside the scope of this course.
