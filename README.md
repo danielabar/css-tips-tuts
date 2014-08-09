@@ -179,3 +179,9 @@ It doesn't scroll along with the page, it stays in the same spot.
 
 For a full solution, should also have some JavaScript that shows or hides the 'Back to Top' button depending on the scrollbar position,
 but that is outside the scope of this course.
+
+## Even and Odd Rows
+
+[Demo](http://danielabar.github.io/css-tips-tuts/evenodd.html)
+
+`nth-child` is a CSS3 selector, therefore it will not work in IE8.

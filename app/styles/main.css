@@ -578,3 +578,72 @@ input[type="radio"]:checked + label:before {
 .back-to-top:hover {
   color: #D319BD;
 }
+
+/*
+*******************************
+* Even and Odd Rows
+*******************************
+*/
+
+.evenodd table {
+  width: 100%;
+  border: 2px solid #eaeaea;
+  border-collapse: separate;
+  border-radius: 3px;
+}
+
+.evenodd th {
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.evenodd td {
+  text-align: left;
+}
+
+.evenodd td,
+.evenodd th {
+  border: 2px solid #eaeaea;
+  height: 2em;
+  vertical-align: middle;
+  padding: 0.5em;
+}
+
+.evenrows tr:nth-child(even) {
+  background-color: #B6D1F3;
+}
+
+.oddrows tr:nth-child(odd) {
+  background-color: #B6D1F3;
+}
+
+.evenodd li {
+  font-size: 1.2em;
+  line-height: 1.4em;
+  letter-spacing: 0.1em;
+}
+
+.every-second li:nth-child(2n) {
+  color: blue;
+  background-color: #ccc;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.every-third li:nth-child(3n) {
+  color: red;
+  background-color: #ccc;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.fourth-fifth li:nth-child(4n+5) {
+  color: green;
+  background-color: #ccc;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: 1.3em;
+}
