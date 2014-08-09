@@ -1,0 +1,33 @@
+<!DOCTYPE html><html class=no-js><head><meta charset=utf-8><title>Even and Odd Rows</title><meta name=description content=""><meta name=viewport content="width=device-width"><link rel="shortcut icon" href=/favicon.ico><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/6a9515dd.vendor.css><link rel=stylesheet href=styles/988fb43f.main.css><body><header><h1><a href=index.html>CSS Tips &amp; Tricks</a></h1><h2>Even and Odd Rows</h2></header><nav><ul><a href=css-shorthand.html><li>CSS Shorthand</li></a> <a href=text-selection.html><li>Text Selection Color</li></a> <a href=font-stacks.html><li>Font Stacks</li></a> <a href=dropcaps.html><li>Drop Caps</li></a> <a href=placeholder.html><li>Placeholder Text</li></a> <a href=dottedoutline.html><li>Link Outlines</li><a href=customradio.html><li>Radio Buttons and Checkboxes</li></a> <a href=formstates.html><li>Form Element States</li></a> <a href=centering.html><li>Centering</li><a href=imgcentering.html><li>Image Centering</li><a href=floats.html><li>Floats</li></a> <a href=triangles.html><li>Triangles</li></a> <a href=circles.html><li>Circles</li></a> <a href=layeredpaper.html><li>Layered Paper</li></a> <a href=creativebullets.html><li>List Bullets</li></a> <a href=backtotop.html><li>Back to Top</li></a><li class=active>Even Odd Rows</li><a href=fluidimages.html><li>Fluid Images</li></a></a></a></a></ul></nav><div class="container evenodd"><h3>Style the even rows</h3><table class=evenrows><tr><th>Name<th>Email<tr><td>Adi<td>adi@gmail.com<tr><td>John<td>john@gmail.com<tr><td>Robert<td>robert@gmail.com<tr><td>James<td>james@gmail.com</table><pre><code class=language-css>
+    tr:nth-child(even) {
+      background-color: #B6D1F3;
+    }
+    </code></pre><h3>Style the odd rows</h3><table class=oddrows><tr><th>Name<th>Email<tr><td>Adi<td>adi@gmail.com<tr><td>John<td>john@gmail.com<tr><td>Robert<td>robert@gmail.com<tr><td>James<td>james@gmail.com</table><pre><code class=language-css>
+    tr:nth-child(odd) {
+      background-color: #B6D1F3;
+    }
+    </code></pre><h3>Style every second list item (aka even)</h3><ul class=every-second><li>Item 1</li><li>Item 2</li><li>Item 3</li><li>Item 4</li><li>Item 5</li><li>Item 6</li><li>Item 7</li><li>Item 8</li><li>Item 9</li><li>Item 10</li></ul><pre><code class=language-css>
+    li:nth-child(2n) {
+      color: blue;
+      background-color: #ccc;
+      padding: 0.5em;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    </code></pre><h3>Style every third list item</h3><ul class=every-third><li>Item 1</li><li>Item 2</li><li>Item 3</li><li>Item 4</li><li>Item 5</li><li>Item 6</li><li>Item 7</li><li>Item 8</li><li>Item 9</li><li>Item 10</li></ul><pre><code class=language-css>
+    li:nth-child(3n) {
+      color: red;
+      background-color: #ccc;
+      padding: 0.5em;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    </code></pre><h3>Style every fourth list item, starting with the fifth</h3><ul class=fourth-fifth><li>Item 1</li><li>Item 2</li><li>Item 3</li><li>Item 4</li><li>Item 5</li><li>Item 6</li><li>Item 7</li><li>Item 8</li><li>Item 9</li><li>Item 10</li></ul><pre><code class=language-css>
+    li:nth-child(4n+5) {
+      color: green;
+      background-color: #ccc;
+      padding: 0.5em;
+      font-weight: bold;
+      font-size: 1.3em;
+    }
+    </code></pre></div><!--//container--><footer><small>&copy; Copyright 2014, <a href=https://github.com/danielabar>Daniela Baron</a></small></footer><script src=scripts/724f6be5.vendor-prism.js></script>
