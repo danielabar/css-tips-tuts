@@ -104,12 +104,34 @@ nav ul li:hover, .active {
 
 /*
 *******************************
+* Article
+*******************************
+*/
+
+article h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 2em;
+  color: #312D2B;
+}
+
+article p {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #686060;
+}
+
+
+/*
+*******************************
 * Footer
 *******************************
 */
 
 footer {
-  margin: 10px;
+  margin: 20px;
+  clear: both;
 }
 
 /*
@@ -646,4 +668,31 @@ input[type="radio"]:checked + label:before {
   padding: 0.5em;
   font-weight: bold;
   font-size: 1.3em;
+}
+
+/*
+*******************************
+* Fluid Images
+*******************************
+*/
+
+.fluid-images {
+  width: 70%;
+  float: right;
+}
+
+.fluid-images pre {
+  width: 80%;
+}
+
+.fluid-images img {
+  max-width: 100%;
+}
+
+.fluid-images .container-1 {
+  width: 20%;
+}
+
+.fluid-images .container-2 {
+  width: 200px;
 }

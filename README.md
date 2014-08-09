@@ -185,3 +185,20 @@ but that is outside the scope of this course.
 [Demo](http://danielabar.github.io/css-tips-tuts/evenodd.html)
 
 `nth-child` is a CSS3 selector, therefore it will not work in IE8.
+
+## Create Fluid Images
+
+[Demo](http://danielabar.github.io/css-tips-tuts/fluidimages.html)
+
+Images that shrink or get bigger, depending on the parent element width.
+Fluid images also maintain their propotions.
+
+Using `max-width: 100%` will make images resize accordingly as user resizes window.
+
+Note `max-width` doesn't work well on IE. Instead use `width` as follows
+
+  ```css
+  .container img {
+    width: 100%
+  }
+  ```
