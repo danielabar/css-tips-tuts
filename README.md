@@ -156,3 +156,13 @@ Browser support is pretty good, will work in all major browsers except IE8.
 Apply multiple `box-shadow` to same element with varying blurs and offsets with comma separated list of properties.
 
 ## Get Creative with List Bullets
+
+[Demo](http://danielabar.github.io/css-tips-tuts/creativebullets.html)
+
+Note 2-arg version of border-color
+
+  ```css
+  border-color: transparent #111;
+  ```
+
+Vertical border will be transparent, horizontal border will be #111.

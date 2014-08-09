@@ -530,3 +530,24 @@ input[type="radio"]:checked + label:before {
   background: url(../images/bullet.png) left center no-repeat;
   padding-left: 1em;
 }
+
+.creative-list .list-2 li:before {
+  content: "";
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-color: transparent green;
+  border-style: solid;
+  border-width: 4px 0 4px 6px;
+  margin-right: 0.5em;
+}
+
+.creative-list .list-3 li:before {
+  content: "";
+  display: inline-block;
+  background-color: blue;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  margin: 0 0.5em 1px 0;
+}

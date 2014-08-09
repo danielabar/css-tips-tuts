@@ -49,14 +49,14 @@
 
   <div class="container creative-list">
 
-    <h3>First get rid of all the bullets</h3>
+    <h3>Remove the browser default bullets</h3>
     <pre><code class="language-css">
     ul {
       list-style-type: none;
     }
     </code></pre>
 
-    <h3>List 1 has an image for bullets</h3>
+    <h3>This list has an image for bullets</h3>
     <ul class="list-1">
       <li>List item 1</li>
       <li>List item 2</li>
@@ -65,11 +65,13 @@
       <li>List item 5</li>
     </ul>
     <pre><code class="language-css">
-    .list-1 li {
+    li {
       background: url(../images/bullet.png) left center no-repeat;
       padding-left: 1em;
     }
     </code></pre>
+
+    <h3>This list has CSS triangles for bullets</h3>
     <ul class="list-2">
       <li>List item 1</li>
       <li>List item 2</li>
@@ -77,6 +79,20 @@
       <li>List item 4</li>
       <li>List item 5</li>
     </ul>
+    <pre><code class="language-css">
+    li:before {
+      content: "";
+      display: inline-block;
+      height: 0;
+      width: 0;
+      border-color: transparent green;
+      border-style: solid;
+      border-width: 4px 0 4px 6px;
+      margin-right: 0.5em;
+    }
+    </code></pre>
+
+    <h3>This list has CSS circles for bullets</h3>
     <ul class="list-3">
       <li>List item 1</li>
       <li>List item 2</li>
@@ -84,6 +100,17 @@
       <li>List item 4</li>
       <li>List item 5</li>
     </ul>
+    <pre><code class="language-css">
+    li:before {
+      content: "";
+      display: inline-block;
+      background-color: blue;
+      width: 6px;
+      height: 6px;
+      border-radius: 3px;
+      margin: 0 0.5em 1px 0;
+    }
+    </code></pre>
 
 
   </div><!--//container-->
